@@ -1,66 +1,94 @@
-# 🌾 Sohr.ai — Sohrai Santali LLM & NLP Stack
+# 🌾 Sohr.ai — Santali AI Platform
 
-**Sohr.ai** (pronounced **Sohr-ai**, from the Santali harvest festival **Sohrai**) is an open initiative to build the first complete **LLM and NLP ecosystem for the Santali language (sat, Ol Chiki script)**.
+**Sohr.ai** (pronounced **Sohr-ai**, from the Santali harvest festival *Sohrai*) is a complete **Santali AI platform** —  
+combining language models, embeddings, speech, and tooling with a simple API for developers.
 
-For 7M+ Santali speakers, there is still **no** production-ready language model, spellchecker, or translation system.  
-Sohr.ai aims to change that — with **open data, open models, and open tools**.
-
----
-
-## ✨ Vision
-
-- Build a **Santali-native language model** that understands Ol Chiki, Roman Santali, and code-mixed text.
-- Provide **practical tools**: spellcheck, grammar correction, translation, summarization, search.
-- Create a **shared public dataset** and contribution framework so any developer/researcher can extend the ecosystem.
-- Make Santali AI **as easy to use** as English models: one pip install, one API call.
+Santali (sat, Ol Chiki) has over 7M speakers, but almost no production‑ready AI support.  
+Sohr.ai aims to change that with **open models, open data, and an open ecosystem**.
 
 ---
 
-## 🧱 Project Components
+## 🔍 What is Sohr.ai?
 
-Planned core components of Sohr.ai:
+Sohr.ai is:
 
-- **📚 Corpus**
-  - Clean text corpus (Ol Chiki + Roman)
-  - Parallel EN ↔ Santali data
-  - Domain-specific subsets (education, govt schemes, jobs, culture, lyrics)
+- A **core set of models** for Santali:
+  - Text generation and understanding (chat, completion, Q&A)
+  - Embeddings for search, clustering, and recommendations
+  - Spellchecking, normalization, and grammar assistance
+  - (Planned) Speech recognition (ASR) and text‑to‑speech (TTS)
 
-- **🧠 Models**
-  - Tokenizer for Santali (Ol Chiki + Roman)
-  - Base language model (fine-tuned from multilingual LLM)
-  - Task-specific heads (spellcheck, NER, classification, translation)
+- A **developer platform**:
+  - Hosted **HTTP API** for inference
+  - Python / JavaScript SDKs
+  - CLI tools for local workflows and automation
 
-- **🛠 Tools & APIs**
-  - Python SDK (`sohr-ai`)
-  - REST inference API
-  - CLI tools for local use (proofreading, transliteration, dataset cleaning)
-
-- **🌍 Community**
-  - Contribution guidelines for new data
-  - Benchmarks and leaderboards for Santali tasks
-  - Example apps: keyboard integration, content moderation, job listing translation
+- An **open ecosystem**:
+  - Public datasets and preprocessing pipelines
+  - Benchmarks for Santali language tasks
+  - Community contributions and research collaborations
 
 ---
 
-## 🚧 Status
+## 🎯 Vision
 
-> This project is under **active early development**.
+Our long‑term vision:
 
-Planned milestones:
-
-- [ ] v0.1 – Public dataset + basic tokenizer  
-- [ ] v0.2 – Spellchecker & normalization model  
-- [ ] v0.3 – EN ↔ Santali translation model  
-- [ ] v0.4 – Instruction-tuned Santali LLM (chat-style)  
-- [ ] v1.0 – Production-ready API, docs, and reference apps
+- Make Santali **a first‑class language in AI** — as easy to integrate as English or Hindi.
+- Enable developers to build **Santali‑first products**: education, jobs, content, government access.
+- Provide **transparent, well‑documented datasets and models** that anyone can inspect, improve, and deploy.
+- Serve as a **reference blueprint** for other Adivasi and low‑resource languages.
 
 ---
 
-## 🚀 Getting Started
+## 🧱 Platform Components
 
-> These commands are **provisional** and will be updated once the first release is published.
+Planned components of Sohr.ai:
 
-### Installation
+- **Models**
+  - Base language model for Santali and code‑mixed text
+  - Instruction‑tuned chat model for interactive use
+  - Embedding model for search and retrieval
+  - Task‑specific models (spellcheck, NER, classification, translation)
+  - (Future) ASR/TTS models for spoken Santali
+
+- **Data**
+  - Curated text corpus (Ol Chiki + Roman)
+  - Parallel English ↔ Santali datasets
+  - Domain‑specific corpora (education, govt schemes, jobs, culture, lyrics)
+  - Clear documentation of sources, licenses, and preprocessing
+
+- **APIs & Tools**
+  - REST API for all models
+  - SDKs (Python/JS) and example clients
+  - Command‑line tools for:
+    - Proofreading and normalization
+    - Transliteration
+    - Dataset cleaning and evaluation
+
+---
+
+## 🚧 Status & Roadmap
+
+> Sohr.ai is in **early development**. APIs, models, and interfaces will evolve quickly.
+
+Planned roadmap (high‑level):
+
+- **v0.1** – Public text corpus and preprocessing scripts  
+- **v0.2** – Spellcheck / normalization model + basic API  
+- **v0.3** – Embeddings + search toolkit  
+- **v0.4** – EN ↔ Santali translation and chat‑style model  
+- **v1.0** – Stable platform: hosted API, SDKs, documentation, and reference apps
+
+Check the [ROADMAP.md] (coming soon) for technical details and timelines.
+
+---
+
+## 🚀 Getting Started (early preview)
+
+> Example interface — exact package and model names will be finalized before release.
+
+### Install SDK
 
 ```bash
 pip install sohr-ai
